@@ -1,0 +1,7 @@
+{
+  "name": "UniStay Uganda",
+  "description": "A premium mobile-first web application designed for Ugandan university students to find hostels, discover campus news, events, jobs, and celebrate student achievements.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

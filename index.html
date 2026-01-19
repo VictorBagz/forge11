@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth scroll-pt-20">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniStay Uganda - Find Your Perfect Hostel</title>
+  
+  <!-- CDN Performance Hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://images.unsplash.com">
+
+  <!-- Preload Critical Hero Asset -->
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1541339907198-e08756ebafe1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
+  <script>
+    window.tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              DEFAULT: '#002349',
+              light: '#003366',
+              dark: '#001a33'
+            },
+            yellow: {
+              DEFAULT: '#FFD700',
+              hover: '#E6C200'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; margin: 0; }
+    .hide-scrollbar::-webkit-scrollbar { display: none; }
+    .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    
+    .cv-auto {
+      content-visibility: auto;
+      contain-intrinsic-size: 1px 1000px;
+    }
+    
+    .gpu-accel {
+      transform: translate3d(0,0,0);
+      will-change: transform, opacity;
+      backface-visibility: hidden;
+    }
+
+    @keyframes reveal {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .reveal { animation: reveal 0.8s ease-out forwards; }
+    
+    .cubic-bezier {
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .btn-press {
+      transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1), filter 0.1s ease;
+    }
+    .btn-press:active {
+      transform: scale(0.96);
+      filter: brightness(0.9);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-navy overflow-x-hidden selection:bg-yellow selection:text-navy">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,4 +1,3 @@
-
 import { University, Hostel, CommunityPost, Student } from './types';
 
 export const UNIVERSITIES: University[] = [
@@ -18,7 +17,7 @@ export const HOSTELS: Hostel[] = [
     priceRange: 'UGX 800k - 1.2M',
     distance: '200m from Main Gate',
     rating: 4.8,
-    image: 'https://picsum.photos/seed/hostel1/800/600',
+    image: '/images/hostels/abudhabi.jpg',
     isRecommended: true,
     amenities: ['WiFi', 'Shuttle', 'Security']
   },
@@ -29,7 +28,7 @@ export const HOSTELS: Hostel[] = [
     priceRange: 'UGX 1.2M - 2.5M',
     distance: '500m from Law Faculty',
     rating: 4.9,
-    image: 'https://picsum.photos/seed/hostel2/800/600',
+    image: '/images/hostels/akwataEmpoola.jpeg',
     isRecommended: true,
     amenities: ['Swimming Pool', 'Gym', 'WiFi']
   },
@@ -40,7 +39,7 @@ export const HOSTELS: Hostel[] = [
     priceRange: 'UGX 600k - 900k',
     distance: '100m from West Gate',
     rating: 4.2,
-    image: 'https://picsum.photos/seed/hostel3/800/600',
+    image: '/images/hostels/aryan.jpeg',
     isRecommended: false,
     amenities: ['Canteen', 'WiFi']
   },
@@ -51,7 +50,7 @@ export const HOSTELS: Hostel[] = [
     priceRange: 'UGX 1.0M - 1.5M',
     distance: '300m from Nakawa',
     rating: 4.5,
-    image: 'https://picsum.photos/seed/hostel4/800/600',
+    image: '/images/hostels/basin.jpeg',
     isRecommended: true,
     amenities: ['Shuttle', 'Restaurant']
   },
@@ -62,7 +61,7 @@ export const HOSTELS: Hostel[] = [
     priceRange: 'UGX 1.5M+',
     distance: '50m from Mukono Gate',
     rating: 4.7,
-    image: 'https://picsum.photos/seed/hostel5/800/600',
+    image: '/images/hostels/basma.jpg',
     isRecommended: true,
     amenities: ['AC', 'Gym', 'WiFi']
   }
@@ -75,7 +74,7 @@ export const COMMUNITY_POSTS: CommunityPost[] = [
     title: 'New Library Wings Open',
     description: 'The long-awaited expansion of the Main Library is finally complete.',
     date: 'Oct 24, 2023',
-    image: 'https://picsum.photos/seed/news1/600/400'
+    image: '/images/badges/mak.png'
   },
   {
     id: 'p2',
@@ -83,7 +82,7 @@ export const COMMUNITY_POSTS: CommunityPost[] = [
     title: 'Freshers Ball 2024',
     description: 'Join us for the biggest welcome party of the semester featuring top Ugandan artists.',
     date: 'Nov 12, 2023',
-    image: 'https://picsum.photos/seed/event1/600/400'
+    image: '/images/badges/kyambogo.jpg'
   },
   {
     id: 'p3',
@@ -100,7 +99,7 @@ export const SPOTLIGHT_STUDENTS: Student[] = [
     name: 'Namono Sarah',
     university: 'Makerere University',
     achievement: 'Developed a low-cost irrigation system for rural farmers.',
-    image: 'https://picsum.photos/seed/student1/400/400',
+    image: '/images/badges/must.jpg',
     field: 'Engineering'
   },
   {
@@ -108,7 +107,7 @@ export const SPOTLIGHT_STUDENTS: Student[] = [
     name: 'Okello John',
     university: 'Kyambogo University',
     achievement: 'Won the National Debate Championship for three consecutive years.',
-    image: 'https://picsum.photos/seed/student2/400/400',
+    image: '/images/badges/mubs.jpg',
     field: 'Social Sciences'
   }
 ];

@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
             {/* Main Hero Image - GPU Accelerated with Hardware-layer promotion */}
             <div className="absolute inset-0 z-0 gpu-accel overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1541339907198-e08756ebafe1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                src="/images/hostels/castleVille.jpeg" 
                 alt="Modern Campus Architecture" 
                 className="w-full h-full object-cover object-center scale-100 transition-transform duration-[10000ms] hover:scale-110"
                 fetchPriority="high"
